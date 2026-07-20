@@ -1,0 +1,7 @@
+{
+  "name": "profile-refresh-image-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A random image endpoint for a GitHub profile README, deployable on Vercel."
+}
