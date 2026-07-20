@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Show the next image on every page refresh, independently for each visitor." />
+  <title>Refresh Image Rotator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="viewer" aria-live="polite">
+      <img id="rotating-image" alt="" />
+      <p id="status" class="status">Loading image…</p>
+    </section>
+  </main>
+
+  <script src="./images.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
