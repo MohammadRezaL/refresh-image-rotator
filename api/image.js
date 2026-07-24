@@ -13,6 +13,10 @@ const images = [
     file: new URL("../images/Interstellar.png", import.meta.url),
     type: "image/png",
   },
+      {
+    file: new URL("../images/Friends.png", import.meta.url),
+    type: "image/png",
+  },
     {
     file: new URL("../images/Leon.png", import.meta.url),
     type: "image/png",
