@@ -2,15 +2,7 @@ import { readFile } from "node:fs/promises";
 
 const images = [
   {
-    file: new URL("../images/01.svg", import.meta.url),
-    type: "image/svg+xml; charset=utf-8",
-  },
-  {
-    file: new URL("../images/02.svg", import.meta.url),
-    type: "image/svg+xml; charset=utf-8",
-  },
-  {
-    file: new URL("../images/03.svg", import.meta.url),
+    file: new URL("../images/Matrix.png", import.meta.url),
     type: "image/svg+xml; charset=utf-8",
   },
   {
