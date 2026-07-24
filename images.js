@@ -11,4 +11,6 @@
 window.ROTATOR_IMAGES = [
   "./images/Matrix.png",
   "./images/Leon.png",
+  "./images/MadMAX.png",
+  "./images/Interstellar.png",
 ];
