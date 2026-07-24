@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 const images = [
   {
     file: new URL("../images/Matrix.png", import.meta.url),
-    type: "image/svg+xml; charset=utf-8",
+    type: "image/png",
   },
   {
     file: new URL("../images/Leon.png", import.meta.url),
