@@ -1,33 +1,58 @@
+import { readFile } from "node:fs/promises";
+
+const images = [
+  {
+    file: new URL("../images/01.svg", import.meta.url),
+    type: "image/svg+xml; charset=utf-8",
+  },
+  {
+    file: new URL("../images/02.svg", import.meta.url),
+    type: "image/svg+xml; charset=utf-8",
+  },
+  {
+    file: new URL("../images/03.svg", import.meta.url),
+    type: "image/svg+xml; charset=utf-8",
+  },
+  {
+    file: new URL("../images/Leon.png", import.meta.url),
+    type: "image/png",
+  },
+];
+
 let previousIndex = -1;
 
-export default function handler(request, response) {
-  const images = [
-    "/images/01.svg",
-    "/images/02.svg",
-    "/images/03.svg",
-    "/images/Leon.png",
-  ];
+export default async function handler(request, response) {
+  try {
+    let index = Math.floor(Math.random() * images.length);
 
-  let index = Math.floor(Math.random() * images.length);
+    // Avoid repeating the previous image when the same function instance is used.
+    if (images.length > 1 && index === previousIndex) {
+      index = (index + 1) % images.length;
+    }
 
-  if (images.length > 1 && index === previousIndex) {
-    index = (index + 1) % images.length;
+    previousIndex = index;
+
+    const selectedImage = images[index];
+    const imageData = await readFile(selectedImage.file);
+
+    response.setHeader("Content-Type", selectedImage.type);
+    response.setHeader(
+      "Cache-Control",
+      "no-store, no-cache, max-age=0, must-revalidate"
+    );
+    response.setHeader("CDN-Cache-Control", "no-store");
+    response.setHeader("Vercel-CDN-Cache-Control", "no-store");
+    response.setHeader("Pragma", "no-cache");
+    response.setHeader("Expires", "0");
+    response.setHeader("X-Content-Type-Options", "nosniff");
+
+    response.statusCode = 200;
+    response.end(imageData);
+  } catch (error) {
+    console.error(error);
+
+    response.statusCode = 500;
+    response.setHeader("Content-Type", "text/plain; charset=utf-8");
+    response.end("Could not load image.");
   }
-
-  previousIndex = index;
-
-  response.setHeader(
-    "Cache-Control",
-    "no-store, no-cache, max-age=0, must-revalidate"
-  );
-
-  response.setHeader("CDN-Cache-Control", "no-store");
-  response.setHeader("Vercel-CDN-Cache-Control", "no-store");
-
-  response.statusCode = 307;
-  response.setHeader(
-    "Location",
-    `${images[index]}?v=${Date.now()}`
-  );
-  response.end();
 }
