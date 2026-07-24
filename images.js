@@ -9,8 +9,6 @@
  * ];
  */
 window.ROTATOR_IMAGES = [
-  "./images/01.svg",
-  "./images/02.svg",
-  "./images/03.svg",
+  "./images/Matrix.png",
   "./images/Leon.png",
 ];
