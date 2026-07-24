@@ -5,6 +5,7 @@ export default function handler(request, response) {
     "/images/01.svg",
     "/images/02.svg",
     "/images/03.svg",
+    "/images/Leon.png",
   ];
 
   let index = Math.floor(Math.random() * images.length);
