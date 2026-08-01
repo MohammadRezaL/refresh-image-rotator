@@ -24,13 +24,36 @@ const categories = {
       file: new URL("../images/movie/Friends.png", import.meta.url),
       type: "image/png",
     },
+        {
+      file: new URL(
+        "../images/movie/MadMax.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+
+    {
+      file: new URL(
+        "../images/movie/Matrix.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+
+    {
+      file: new URL(
+        "../images/movie/Interstellar.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
   ],
 
 
-  animation: [
+  anime: [
     {
       file: new URL(
-        "../images/animation/MadMax.png",
+        "../images/anime/AOT.png",
         import.meta.url
       ),
       type: "image/png",
@@ -38,7 +61,7 @@ const categories = {
 
     {
       file: new URL(
-        "../images/animation/Matrix.png",
+        "../images/anime/DeathNote.png",
         import.meta.url
       ),
       type: "image/png",
@@ -46,7 +69,30 @@ const categories = {
 
     {
       file: new URL(
-        "../images/animation/Interstellar.png",
+        "../images/anime/DemonSlayer.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+        {
+      file: new URL(
+        "../images/anime/Full.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+
+    {
+      file: new URL(
+        "../images/anime/Hunter.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+
+    {
+      file: new URL(
+        "../images/anime/Jujutsu.png",
         import.meta.url
       ),
       type: "image/png",
