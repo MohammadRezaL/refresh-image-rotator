@@ -53,7 +53,7 @@ const categories = {
   anime: [
     {
       file: new URL(
-        "../images/anime/AOT.png",
+        "../images/Anime/AOT.png",
         import.meta.url
       ),
       type: "image/png",
@@ -61,7 +61,7 @@ const categories = {
 
     {
       file: new URL(
-        "../images/anime/DeathNote.png",
+        "../images/Anime/DeathNote.png",
         import.meta.url
       ),
       type: "image/png",
@@ -69,14 +69,14 @@ const categories = {
 
     {
       file: new URL(
-        "../images/anime/DemonSlayer.png",
+        "../images/Anime/DemonSlayer.png",
         import.meta.url
       ),
       type: "image/png",
     },
         {
       file: new URL(
-        "../images/anime/Full.png",
+        "../images/Anime/Full.png",
         import.meta.url
       ),
       type: "image/png",
@@ -84,7 +84,7 @@ const categories = {
 
     {
       file: new URL(
-        "../images/anime/Hunter.png",
+        "../images/Anime/Hunter.png",
         import.meta.url
       ),
       type: "image/png",
@@ -92,7 +92,7 @@ const categories = {
 
     {
       file: new URL(
-        "../images/anime/Jujutsu.png",
+        "../images/Anime/Jujutsu.png",
         import.meta.url
       ),
       type: "image/png",
