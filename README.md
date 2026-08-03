@@ -55,6 +55,13 @@ The default endpoint also uses all categories:
   />
 </p>
 ```
+<p align="center">
+  <img
+    src="https://refresh-image-rotator.vercel.app/api/image?category=movie"
+    alt="Random movie image"
+    width="100%"
+  />
+</p>
 
 ### Anime
 
@@ -67,6 +74,13 @@ The default endpoint also uses all categories:
   />
 </p>
 ```
+<p align="center">
+  <img
+    src="https://refresh-image-rotator.vercel.app/api/image?category=anime"
+    alt="Random anime image"
+    width="100%"
+  />
+</p>
 
 ### Animation
 
