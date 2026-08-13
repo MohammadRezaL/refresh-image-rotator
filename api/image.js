@@ -97,6 +97,14 @@ const categories = {
       ),
       type: "image/png",
     },
+
+    {
+      file: new URL(
+        "../images/Anime/Bleach.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
   ],
 
 };
