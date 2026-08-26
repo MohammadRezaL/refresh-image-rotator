@@ -61,6 +61,14 @@ const categories = {
 
     {
       file: new URL(
+        "../images/Anime/Vinland.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+
+    {
+      file: new URL(
         "../images/Anime/Chainsaw.png",
         import.meta.url
       ),
