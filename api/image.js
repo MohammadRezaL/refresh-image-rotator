@@ -24,7 +24,7 @@ const categories = {
       file: new URL("../images/movie/Friends.png", import.meta.url),
       type: "image/png",
     },
-        {
+    {
       file: new URL(
         "../images/movie/MadMax.png",
         import.meta.url
