@@ -39,6 +39,14 @@ const categories = {
       ),
       type: "image/png",
     },
+    
+    {
+      file: new URL(
+        "../images/movie/Fight_Club.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
 
     {
       file: new URL(
