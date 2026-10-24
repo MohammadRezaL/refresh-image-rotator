@@ -34,6 +34,14 @@ const categories = {
 
     {
       file: new URL(
+        "../images/movie/Batman.png",
+        import.meta.url
+      ),
+      type: "image/png",
+    },
+
+    {
+      file: new URL(
         "../images/movie/Matrix.png",
         import.meta.url
       ),
